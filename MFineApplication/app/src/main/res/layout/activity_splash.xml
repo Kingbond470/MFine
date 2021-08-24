@@ -7,12 +7,12 @@
     android:orientation="vertical"
     tools:context=".SplashScreen">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/splash_logo" />
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/splash_logo" />-->
 
     <TextView
         android:layout_width="wrap_content"
