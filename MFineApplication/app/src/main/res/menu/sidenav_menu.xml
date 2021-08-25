@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools ="http://schemas.android.com/tools"
+
+    tools:showIn = "navigation_view">
+    <item android:title="MFINE CARE SERVICES">
+        <menu>
+            <item
+                android:id="@+id/consultNow"
+                android:icon="@drawable/ic_plus"
+                android:title="Consult Now"/>
+            <item
+                android:id="@+id/bookHealthPkg"
+                android:icon="@drawable/ic_plus"
+                android:title="Book Health Package"/>
+            <item
+                android:id="@+id/orderLabTst"
+                android:icon="@drawable/ic_plus"
+                android:title="Order Lab Test"/>
+            <item
+                android:id="@+id/orderMedicines"
+                android:icon="@drawable/ic_plus"
+                android:title="Order Medicines"/>
+            <item
+                android:id="@+id/buySubs"
+                android:icon="@drawable/ic_plus"
+                android:title="Buy Subscription"/>
+        </menu>
+    </item>
+    <item android:title="RECORDS">
+        <menu>
+            <item
+                android:id="@+id/healthFiles"
+                android:icon="@drawable/ic_plus"
+                android:title="Health files"/>
+            <item
+                android:id="@+id/Invoices"
+                android:icon="@drawable/ic_plus"
+                android:title="Invoices"/>
+        </menu>
+    </item>
+    <item android:title="ABOUT">
+        <menu>
+            <item
+                android:id="@+id/helpSupport"
+                android:icon="@drawable/ic_plus"
+                android:title="Help and Support"/>
+            <item
+                android:id="@+id/aboutMFine"
+                android:icon="@drawable/ic_plus"
+                android:title="About MFine"/>
+            <item
+                android:id="@+id/termsConditions"
+                android:icon="@drawable/ic_plus"
+                android:title="Terms and Conditions"/>
+            <item
+                android:id="@+id/privacyPolicy"
+                android:icon="@drawable/ic_plus"
+                android:title="Privacy Policy"/>
+        </menu>
+    </item>
+    <item android:title="SETTINGS">
+        <menu>
+            <item
+                android:id="@+id/setting"
+                android:icon="@drawable/ic_plus"
+                android:title="Settings"/>
+        </menu>
+    </item>
+</menu>

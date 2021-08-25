@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Explore"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_explore"/>
+    <item
+        android:title="Consult Now"
+        android:id="@+id/category"
+        android:icon="@drawable/consult_now"/>
+    <item
+        android:title="Health Files"
+        android:id="@+id/setting"
+        android:icon="@drawable/health_files"/>
+</menu>

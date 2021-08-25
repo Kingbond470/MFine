@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#1966FF"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePic"
+                        android:src="@drawable/jeff_bezos"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profilePic"
+                        android:layout_marginTop="2dp"
+                        android:text="Jeff Bezos"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnMom"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_plus" />
+                    <TextView
+                        android:id="@+id/tvMom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnMom"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Mom"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnDad"
+                        android:src="@drawable/ic_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:id="@+id/tvDad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnDad"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Dad"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnWife"
+                        android:src="@drawable/ic_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:id="@+id/tvWife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnWife"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Wife"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnDaughter"
+                        android:src="@drawable/ic_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:id="@+id/tvDaughter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnDaughter"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Daughter"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/btnSon"
+                        android:src="@drawable/ic_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:id="@+id/tvSon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnSon"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Son"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#1966FF"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btnAddFamily"
+                android:src="@drawable/ic_plus"
+                android:layout_width="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:text="Add family"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCronaVirus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/jeff_bezos" />
+
+            <TextView
+                android:id="@+id/tvCrona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/ivCronaVirus"
+                android:textColor="@color/black"
+                android:text="Coronavirus Assessment"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/ivCronaVirus" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCrona"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/ivCronaVirus"
+                android:text="Take a 3-minute self assessment"
+                android:layout_toRightOf="@id/ivCronaVirus" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivSelfChecks"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/jeff_bezos" />
+
+            <TextView
+                android:id="@+id/tvSelfChecks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/ivSelfChecks"
+                android:text="Self-Checks"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/ivSelfChecks" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSelfChecks"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/ivSelfChecks"
+                android:text="Concerning signs? Start a self check"
+                android:layout_toRightOf="@id/ivSelfChecks" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivShareApp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/jeff_bezos" />
+
+            <TextView
+                android:id="@+id/tvShareApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/ivShareApp"
+                android:text="Share the App"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/ivShareApp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvShareApp"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/ivShareApp"
+                android:text="Recommended to family and friends"
+                android:layout_toRightOf="@id/ivShareApp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
