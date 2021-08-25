@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CoinFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/coin_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="11 MFine Coins"
+                android:textColor="#FB8C00"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Frequently Asked Questions"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/q_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="What are MFine Coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="How do I earn MFine Coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="How Do i use MFine Coins ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="How Many MFine Coins can I use per Transaction ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="Cancellation &amp; Refund of MFine Coins."
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="Why are my MFine Locked ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/q_no7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/question_bg"
+                android:drawableRight="@drawable/arrow_down_icon"
+                android:padding="10dp"
+                android:text="What Services can I use my MFine Coins on ?"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/ans_no7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="#AAE9F1"
+                android:padding="10dp"
+                android:text="@string/answer"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

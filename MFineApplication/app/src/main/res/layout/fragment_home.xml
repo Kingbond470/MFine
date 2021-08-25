@@ -26,6 +26,7 @@
             android:textSize="15dp" />
 
         <ImageView
+            android:id="@+id/wallet_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/notification_btn"

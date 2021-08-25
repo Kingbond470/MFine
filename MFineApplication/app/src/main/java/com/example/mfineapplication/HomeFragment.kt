@@ -17,8 +17,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         notification_btn.setOnClickListener {
             val intent = Intent(context, HomeActivity::class.java)
-            intent.putExtra("token","notificationFragment")
+            intent.putExtra("token", "notificationFragment")
             startActivity(intent)
         }
+        wallet_btn.setOnClickListener {
+            launchWallet()
+        }
+    }
+    private fun launchWallet() {
+        val intent = Intent(context, WalletActivity::class.java)
+        startActivity(intent)
     }
 }

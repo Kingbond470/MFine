@@ -1,7 +1,9 @@
 package com.example.mfineapplication
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+
 
 class HomeActivity : AppCompatActivity() {
     private val fragmentManager = supportFragmentManager
@@ -26,4 +28,5 @@ class HomeActivity : AppCompatActivity() {
         fragmentTransaction.add(R.id.fragment, notificationFragment, "notificationFragment")
             .commit()
     }
+
 }
