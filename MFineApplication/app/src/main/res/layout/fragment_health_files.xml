@@ -24,6 +24,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/profilePic"
                     android:layout_width="50dp"
+                    android:layout_marginTop="8dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jeff_bezos" />
                 <TextView
@@ -31,10 +32,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/profilePic"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="3dp"
                     android:text="Jeff Bezos"
+                    android:textColor="@color/black"
                     android:layout_marginBottom="10dp"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -54,7 +56,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnMom"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:text="Add Mom"
                     android:textSize="10sp" />
@@ -76,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnDad"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Add Dad"
                     android:layout_marginBottom="10dp"
                     android:textSize="10sp" />
@@ -98,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnWife"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Add Wife"
                     android:layout_marginBottom="10dp"
                     android:textSize="10sp" />
@@ -120,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnDaughter"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Add Daughter"
                     android:layout_marginBottom="10dp"
                     android:textSize="10sp" />
@@ -141,7 +143,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnSon"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Add Son"
                     android:layout_marginBottom="10dp"
                     android:textSize="10sp" />
@@ -162,7 +164,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnSister"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Add Daughter"
                     android:layout_marginBottom="10dp"
                     android:textSize="10sp" />
@@ -183,7 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/btnBrother"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:text="Add Son"
                     android:layout_marginBottom="10dp"
                     android:textSize="10sp" />
@@ -214,172 +216,165 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/my_consultation"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="My Consultations"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/prescription"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="Prescriptions"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/attatch_report"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="Attachment and Reports"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/remainder"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="Remainders"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/medical_history"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="Medical History and Lifestyle"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="18sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/subscription"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="My Subscription"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/lab_parameter"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="Lab Parameters"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="6dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:padding="10dp"
-                    android:src="@drawable/ic_explore"/>
+                    android:padding="8dp"
+                    android:src="@drawable/edit_profile"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
                     android:text="Edit Profile"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
