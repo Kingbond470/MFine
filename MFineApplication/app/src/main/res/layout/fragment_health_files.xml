@@ -1,14 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
     android:layout_height="match_parent"
-    tools:context=".Fragments.FragmentHealthFiles">
+    tools:context=".HealthFilesFragment">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Health Files" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp">
 
-</RelativeLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="62dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/jeff_bezos" />
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profilePic"
+                    android:layout_marginTop="2dp"
+                    android:text="Jeff Bezos"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnMom"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/tvMom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnMom"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Mom"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnDad"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/circle" />
+                <TextView
+                    android:id="@+id/tvDad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnDad"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Dad"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginLeft="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnWife"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/circle" />
+                <TextView
+                    android:id="@+id/tvWife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnWife"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Wife"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnDaughter"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/circle" />
+                <TextView
+                    android:id="@+id/tvDaughter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnDaughter"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Daughter"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginLeft="30dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnSon"
+                    android:src="@drawable/circle"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+                <TextView
+                    android:id="@+id/tvSon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSon"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Son"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnSister"
+                    android:src="@drawable/circle"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+                <TextView
+                    android:id="@+id/tvSister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSister"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Daughter"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnBrother"
+                    android:src="@drawable/circle"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"/>
+                <TextView
+                    android:id="@+id/tvBrother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnBrother"
+                    android:layout_marginTop="14dp"
+                    android:text="Add Son"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:src="@drawable/extra1"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+       android:layout_margin="6dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/my_consultation"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="My Consultations"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/prescription"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Prescriptions"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/attatch_report"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Attachment and Reports"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/remainder"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Remainders"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/medical_history"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Medical History and Lifestyle"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/subscription"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="My Subscription"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/lab_parameter"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Lab Parameters"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:src="@drawable/edit_profile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Edit Profile"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
