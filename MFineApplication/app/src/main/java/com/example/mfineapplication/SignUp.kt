@@ -90,6 +90,9 @@ class SignUp : AppCompatActivity() {
             etMobileNumber.requestFocus()
             imgBtnConfirm.visibility = View.VISIBLE
             imgBtnEdit.visibility = View.INVISIBLE
+            etMobileNumber.setTextColor(Color.parseColor("#000000"))
+            cdOtp.visibility = View.GONE
+
         }
 
         etOtp.doAfterTextChanged {
@@ -275,10 +278,12 @@ class SignUp : AppCompatActivity() {
                     val phone = firebaseAuth.currentUser?.phoneNumber
                     Toast.makeText(this, "Loggin in as $phone", Toast.LENGTH_SHORT).show()
 
-                    // start profile actiivity
-                    val intent = Intent(baseContext, CreateAccount::class.java)
+                    if(etOtp.text.toString().length==6) {
+                        // start profile actiivity
+                        val intent = Intent(baseContext, CreateAccount::class.java)
 
-                    startActivity(intent)
+                        startActivity(intent)
+                    }
 
 
                 }
