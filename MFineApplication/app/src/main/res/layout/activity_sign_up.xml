@@ -129,7 +129,7 @@
                     android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:background="@drawable/orange_circle"
-                    android:src="@drawable/arrow_right"
+                    android:src="@drawable/ic_right"
                     android:visibility="invisible" />
 
                 <ImageView
