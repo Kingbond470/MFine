@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CreateAccount">
+
+    <!--tools:context=".Fragments.CreateAccountFragment"-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etNameCreateAccount"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Create your account"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNameCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/frameLayoutPassword"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_bg"
+        android:fontFamily="@font/roboto"
+        android:hint="Name"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etEmailCreateAccount">
+
+        <EditText
+            android:id="@+id/etSetPasswordCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/edit_bg"
+            android:fontFamily="@font/roboto"
+            android:hint="Set a Password"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnShowHide"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/password_hide"
+            android:layout_marginEnd="18dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="18dp" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/etEmailCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvSelectYourGender"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_bg"
+        android:fontFamily="@font/roboto"
+        android:hint="Personal Email (Optional)"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSelectYourGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupSelectGender"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Your Gender"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSelectGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayoutHospitalCode"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:padding="10dp"
+            android:text="Male"
+            android:textSize="15sp" />
+
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:padding="10dp"
+            android:text="Female"
+            android:textSize="15sp" />
+
+
+        <RadioButton
+            android:id="@+id/rbOthers"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_bg"
+            android:padding="10dp"
+            android:text="Others"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHospitalCode"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@id/cardViewBtnCreate"
+        android:layout_marginVertical="20dp">
+
+        <TextView
+            android:id="@+id/tvHospitalCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto"
+            android:text="I have a hospital code (Optional)"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="210dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBtnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp">
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:paddingHorizontal="50dp"
+            android:text="create" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
