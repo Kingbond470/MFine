@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ExploreFragment">
+    tools:context=".Fragments.FragmentExplore">
+
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -20,6 +22,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="55dp"
                 android:layout_marginBottom="55dp" />
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -28,48 +31,55 @@
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintTop_toTopOf="parent">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Your Location"
                             android:textColor="@color/black"
                             android:textSize="10sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mumbai"
                             android:textSize="10sp" />
                     </LinearLayout>
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_weight="6"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
                     <ImageButton
                         android:id="@+id/imageButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
-                        android:padding="10dp"
                         android:background="@color/white"
+                        android:padding="10dp"
                         android:src="@drawable/ic_wallet" />
+
                     <ImageButton
                         android:id="@+id/imageButton3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
                         android:background="@color/white"
                         android:padding="10dp"
-                        android:src="@drawable/ic_notifications"
-                        android:layout_weight="0.5"/>
+                        android:src="@drawable/ic_notifications" />
                 </LinearLayout>
             </androidx.appcompat.widget.Toolbar>
 

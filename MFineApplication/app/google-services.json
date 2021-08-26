@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "130866868221",
+    "project_id": "mfine-application",
+    "storage_bucket": "mfine-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130866868221:android:fc4f422ab903f49c7db394",
+        "android_client_info": {
+          "package_name": "com.example.mfineapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130866868221-rfi3uj0hvgujr7ajttq95b3anllt15fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_zVu3bqAoIEfoO-twcUGxPV1obFjbGb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130866868221-rfi3uj0hvgujr7ajttq95b3anllt15fb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
