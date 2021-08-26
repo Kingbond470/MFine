@@ -1,9 +1,10 @@
 package com.example.mfineapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
+
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,18 @@ class SplashActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }, 1000)
+
+
+//        val user = FirebaseAuth.getInstance().currentUser
+//        if (user != null) {
+//            // User is signed in
+//            val i = Intent(this@LoginActivity, MainActivity::class.java)
+//            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+//            startActivity(i)
+//        } else {
+//            // User is signed out
+//            Log.d(TAG, "onAuthStateChanged:signed_out")
+//        }
 
     }
 }

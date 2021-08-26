@@ -6,13 +6,10 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
-//import com.example.mfineapplication.databinding.ActivityMainBinding
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
@@ -22,12 +19,6 @@ import kotlinx.android.synthetic.main.activity_sign_up.*
 import java.util.concurrent.TimeUnit
 
 class SignUp : AppCompatActivity() {
-
-
-    //********* firebase related *********
-    //view binding
-   // private lateinit var binding: ActivityMainBinding
-
 
     //if code sending failed, will used to resend
     private var forceResendingToken: PhoneAuthProvider.ForceResendingToken? = null
