@@ -1,21 +1,32 @@
 package com.example.mfineapplication.Fragments
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.mfineapplication.Supporter
 import com.example.mfineapplication.R
+import com.example.mfineapplication.WalletActivity
+import kotlinx.android.synthetic.main.fragment_explore.*
 
-class FragmentExplore : Fragment() {
+class FragmentExplore : Fragment(R.layout.fragment_explore) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_explore, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        notification_btn.setOnClickListener {
+            val intent = Intent(context, Supporter::class.java)
+            intent.putExtra("token", "notificationFragment")
+            startActivity(intent)
+        }
+        wallet_btn.setOnClickListener {
+            launchWallet()
+        }
     }
 
+    private fun launchWallet() {
+        val intent = Intent(context, WalletActivity::class.java)
+        startActivity(intent)
+    }
 
 }

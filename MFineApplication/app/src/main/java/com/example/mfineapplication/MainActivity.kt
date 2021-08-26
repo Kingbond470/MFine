@@ -6,7 +6,6 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.example.mfineapplication.Fragments.FragmentExplore
 import com.example.mfineapplication.Fragments.FragmentHealthFiles
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         navigationView = findViewById(R.id.navmenu)
         val tvBottomNav = findViewById<View>(R.id.bottomNavBar) as BottomNavigationView
