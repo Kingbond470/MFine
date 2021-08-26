@@ -25,7 +25,7 @@ class CreateAccount : AppCompatActivity() {
 
         btnCreate.setOnClickListener {
             //val bundle = Bundle()
-            val intent = Intent(baseContext, HomePage::class.java)
+            val intent = Intent(baseContext, MainActivity::class.java)
             startActivity(intent)
         }
 
