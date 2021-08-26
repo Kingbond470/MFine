@@ -6,14 +6,14 @@ import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
 
 
-class HeartRelatedAdapter(private val heartRelatedModels: ArrayList<HeartRelatedModel>) :
-    RecyclerView.Adapter<HeartRelatedViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeartRelatedViewHolder {
+class SymptomsAdapter(private val heartRelatedModels: ArrayList<SymptomsModel>) :
+    RecyclerView.Adapter<SymptomsViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SymptomsViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
-        return HeartRelatedViewHolder(view)
+        return SymptomsViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: HeartRelatedViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SymptomsViewHolder, position: Int) {
         val heartRelatedModel = heartRelatedModels[position]
         holder.setData(heartRelatedModel)
     }

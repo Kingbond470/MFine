@@ -7,10 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 
-class HeartRelatedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class SymptomsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val mIvImage: ImageView
     private val mTvSymptoms: TextView
-    fun setData(heartRelatedModel: HeartRelatedModel) {
+    fun setData(heartRelatedModel: SymptomsModel) {
         Glide.with(mIvImage).load(heartRelatedModel.ivUrl).into(mIvImage)
         mTvSymptoms.text = heartRelatedModel.tvSymptoms
     }
