@@ -60,7 +60,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer1"
                 android:textColor="#000000"
                 android:visibility="gone" />
 
@@ -84,7 +84,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer2"
                 android:textColor="#000000"
                 android:visibility="gone" />
 
@@ -108,7 +108,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer3"
                 android:textColor="#000000"
                 android:visibility="gone" />
 
@@ -132,7 +132,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer1"
                 android:textColor="#000000"
                 android:visibility="gone" />
 
@@ -156,7 +156,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer5"
                 android:textColor="#000000"
                 android:visibility="gone" />
 
@@ -168,7 +168,7 @@
                 android:background="@drawable/question_bg"
                 android:drawableRight="@drawable/arrow_down_icon"
                 android:padding="10dp"
-                android:text="Why are my MFine Locked ?"
+                android:text="How do I permanently delete my Mfine account ?"
                 android:textColor="#FFFFFF"
                 android:textSize="15dp" />
 
@@ -180,7 +180,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer6"
                 android:textColor="#000000"
                 android:visibility="gone" />
 
@@ -204,7 +204,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:background="#AAE9F1"
                 android:padding="10dp"
-                android:text="@string/answer"
+                android:text="@string/answer1"
                 android:textColor="#000000"
                 android:visibility="gone" />
 

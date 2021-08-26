@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         navigationView = findViewById(R.id.navmenu)
         val tvBottomNav = findViewById<View>(R.id.bottomNavBar) as BottomNavigationView
         tvBottomNav.setOnNavigationItemSelectedListener(this)

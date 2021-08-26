@@ -39,7 +39,7 @@ class WalletActivity : AppCompatActivity() {
     }
 
     private fun launchCouponFragment() {
-        wallet_title.text = "3 Coupons Available"
+        wallet_title.text = "12 Coupons Available"
         wallet_title.setTextColor(0xFF000000.toInt())
         val couponFragment = CouponFragment()
         val fragmentTransaction = fragmentManager.beginTransaction()

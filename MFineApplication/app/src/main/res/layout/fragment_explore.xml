@@ -70,7 +70,7 @@
                         android:layout_weight="0.5"
                         android:background="@color/white"
                         android:padding="10dp"
-                        android:src="@drawable/ic_wallet" />
+                        android:src="@drawable/wallet_icon" />
 
                     <ImageButton
                         android:id="@+id/notification_btn"
@@ -79,7 +79,7 @@
                         android:layout_weight="0.5"
                         android:background="@color/white"
                         android:padding="10dp"
-                        android:src="@drawable/ic_notifications" />
+                        android:src="@drawable/notification_icon" />
                 </LinearLayout>
             </androidx.appcompat.widget.Toolbar>
 
