@@ -6,11 +6,11 @@ import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.example.mfineapplication.Fragments.FragmentExplore
 import com.example.mfineapplication.Fragments.FragmentHealthFiles
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.fragment_explore.*
 
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -46,9 +46,17 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onNavigationItemSelected(menuItem: MenuItem): Boolean {
         var fragment: Fragment? = null
         when (menuItem.itemId) {
-            R.id.nav_explore -> fragment = FragmentExplore()
+            R.id.nav_explore -> {
+                toolbar.visibility = View.VISIBLE
+                fragment = FragmentExplore()
+
+            }
             R.id.nav_consult_now -> launchConsultNow()
-            R.id.nav_health_files -> fragment = FragmentHealthFiles()
+            R.id.nav_health_files -> {
+                toolbar.visibility = View.GONE
+                fragment = FragmentHealthFiles()
+
+            }
         }
         fragment?.let {
             loadFragment(it)
