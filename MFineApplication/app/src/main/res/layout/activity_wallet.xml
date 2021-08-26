@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WalletActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/back_arrow"
+        android:gravity="center_horizontal"
+        android:text="MFine Wallet"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallet_logo" />
+
+
+
+    <TextView
+        android:id="@+id/wallet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="12 Coupons Available"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_bg2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/coupon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/coupon_tab_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="Coupons"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/coin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="Coins"
+            android:textColor="#F4511E"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/wallet_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+    <!--<com.google.android.material.tabs.TabLayout-->
+    <!--android:id="@+id/wallet_tab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:background="@drawable/custom_bg2"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingHorizontal="50dp"-->
+    <!--app:tabMode="auto"-->
+    <!--app:tabRippleColor="#00ACC1"-->
+    <!--app:tabSelectedTextColor="#FFFFFF"-->
+    <!--app:tabTextColor="#FFFFFF" />-->
+
+    <!--<androidx.viewpager.widget.ViewPager-->
+    <!--android:id="@+id/wallet_viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->

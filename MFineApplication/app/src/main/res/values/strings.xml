@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">MFine Application</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="answer1">You can use MFine Coins to avail discounts while booking services on the MFIne App. which will then credited to your MFIne Wallet on the completion of the service.The Amount of MFine Coins to be earned will be displayed during the checkout on the cart page.\n</string>
+    <string name="answer2">Refer and eran and also you can purchase MFine coins\n</string>
+    <string name="answer3">Go to Super Coin Redeem zone in Flipkart.Select above offer.\n1). Redeem it with 150 Super coins.\n2). You will get a Voucher.\n3). Now, Download MFine app: bit.ly/2DcJLtF and sign up\n</string>
+    <string name="answer5">NTHS shall refund any unexpended advance fees paid by You at the time of cancellation of the Service. In case You wish to seek a refund of the advance paid by You because You do not agree with a modification to the Agreement, please write to grievances@mfine.co. We will process refund of the unexpended amount</string>
+    <string name="answer6">You can terminate Your relationship with NTHS at any time by providing ninety (90) days\' prior written notice at legal@mfine.co. We need this period to inactivate User account, only after verifying if there are any ongoing or pending Services.\n</string>
 </resources>

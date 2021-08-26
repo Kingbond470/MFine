@@ -6,13 +6,10 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
-//import com.example.mfineapplication.databinding.ActivityMainBinding
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
@@ -22,12 +19,6 @@ import kotlinx.android.synthetic.main.activity_sign_up.*
 import java.util.concurrent.TimeUnit
 
 class SignUp : AppCompatActivity() {
-
-
-    //********* firebase related *********
-    //view binding
-   // private lateinit var binding: ActivityMainBinding
-
 
     //if code sending failed, will used to resend
     private var forceResendingToken: PhoneAuthProvider.ForceResendingToken? = null
@@ -90,6 +81,9 @@ class SignUp : AppCompatActivity() {
             etMobileNumber.requestFocus()
             imgBtnConfirm.visibility = View.VISIBLE
             imgBtnEdit.visibility = View.INVISIBLE
+            etMobileNumber.setTextColor(Color.parseColor("#000000"))
+            cdOtp.visibility = View.GONE
+
         }
 
         etOtp.doAfterTextChanged {
@@ -275,10 +269,12 @@ class SignUp : AppCompatActivity() {
                     val phone = firebaseAuth.currentUser?.phoneNumber
                     Toast.makeText(this, "Loggin in as $phone", Toast.LENGTH_SHORT).show()
 
-                    // start profile actiivity
-                    val intent = Intent(baseContext, CreateAccount::class.java)
+                    if(etOtp.text.toString().length==6) {
+                        // start profile actiivity
+                        val intent = Intent(baseContext, CreateAccount::class.java)
 
-                    startActivity(intent)
+                        startActivity(intent)
+                    }
 
 
                 }
