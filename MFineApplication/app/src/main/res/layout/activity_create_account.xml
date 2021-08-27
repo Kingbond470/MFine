@@ -209,6 +209,7 @@
             android:backgroundTint="#FF0000"
             android:paddingHorizontal="50dp"
             android:text="CREATE"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
     </androidx.cardview.widget.CardView>
