@@ -1,28 +1,14 @@
 package com.example.mfineapplication.Model
 
- class NotificationModel (doctorProfileImage: Int, docterName: String?, notificationText: String?){
-    private var doctorProfileImage = 0
-    private var docterName: String? = null
-    private var notificationText: String? = null
+import com.google.gson.annotations.SerializedName
 
-    fun NotificationModel(doctorProfileImage: Int, docterName: String?, notificationText: String?) {
-        this.doctorProfileImage = doctorProfileImage
-        this.docterName = docterName
-        this.notificationText = notificationText
-    }
+data class NotificationModel(
+    @SerializedName("doctorImage")
+    val doctorImage: Int,
+    @SerializedName("doctorName")
+    val doctorName: String,
+    @SerializedName("notificationText")
+    val notificationText: String
 
-    fun getDoctorProfileImage(): Int {
-        return doctorProfileImage
-    }
-
-    fun getDocterName(): String? {
-        return docterName
-    }
-
-    fun getNotificationText(): String? {
-        return notificationText
-    }
-
-
-}
+)
 
