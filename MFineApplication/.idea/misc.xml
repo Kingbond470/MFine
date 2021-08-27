@@ -3,13 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/edit_background.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/edit_bg.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/gradient_bg.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/ic_back.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/ic_edit.xml" value="0.290625" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/ic_notifications.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/ic_right.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/wallet_icon.xml" value="0.290625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/activity_consult_now.xml" value="0.176" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/activity_main.xml" value="0.151268115942029" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/activity_search.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/activity_supporter.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/fragment_consult_now.xml" value="0.15625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/fragment_consult_now_side_nav.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/fragment_explore.xml" value="0.15625" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/fragment_health_files.xml" value="0.264" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/header.xml" value="0.15625" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/item_layout.xml" value="0.14945652173913043" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/layout/notification_layout.xml" value="0.1334853090172239" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/menu/bottomnav_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/menu/search_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/menu/sidenav_menu.xml" value="0.27447916666666666" />
       </map>
     </option>

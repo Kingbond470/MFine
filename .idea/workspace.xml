@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fabbd0a-afa3-4fd5-887c-252aec865b5f" name="Default Changelist" comment="" />
+    <list default="true" id="4fabbd0a-afa3-4fd5-887c-252aec865b5f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MFineApplication/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MFineApplication/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MFineApplication/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MFineApplication/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MFineApplication/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MFineApplication/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MFineApplication" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -34,11 +39,5 @@
       <updated>1629781890448</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1629781906424">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1629781906424" />
   </component>
 </project>
