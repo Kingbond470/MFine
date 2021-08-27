@@ -1,0 +1,20 @@
+{
+  "symptoms": [
+    {
+      "type" : "Chest Pain",
+      "avatar":"https://i.postimg.cc/cCGtLgzZ/chestpain.jpg"
+    },
+    {
+      "type" : "Leg Swelling",
+      "avatar":"https://i.postimg.cc/yYBSqR9y/legswelling.jpg"
+    },
+    {
+      "type" : "Giddiness",
+      "avatar":"https://i.postimg.cc/cHn8WMXX/giddiness.jpg"
+    },
+    {
+      "type" : "Palpitation",
+      "avatar":"https://i.postimg.cc/VkKtWNJB/palpitation.jpg"
+    }
+  ]
+}

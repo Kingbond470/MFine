@@ -6,6 +6,6 @@
     <corners android:radius="2dp"/>
     <stroke
         android:width="2dp"
-        android:color="#8AC0E1EC"/>
+        android:color="#1993af"/>
 
 </shape>

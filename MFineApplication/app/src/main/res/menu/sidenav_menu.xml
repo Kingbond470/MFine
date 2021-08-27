@@ -6,23 +6,23 @@
         <menu>
             <item
                 android:id="@+id/consultNow"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/doctor"
                 android:title="Consult Now"/>
             <item
                 android:id="@+id/bookHealthPkg"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/ic_document"
                 android:title="Book Health Package"/>
             <item
                 android:id="@+id/orderLabTst"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/test_tube"
                 android:title="Order Lab Test"/>
             <item
                 android:id="@+id/orderMedicines"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/medicine"
                 android:title="Order Medicines"/>
             <item
                 android:id="@+id/buySubs"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/m_fine_logo"
                 android:title="Buy Subscription"/>
         </menu>
     </item>
@@ -30,11 +30,11 @@
         <menu>
             <item
                 android:id="@+id/healthFiles"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/profile"
                 android:title="Health files"/>
             <item
                 android:id="@+id/Invoices"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/ic_document"
                 android:title="Invoices"/>
         </menu>
     </item>
@@ -42,11 +42,11 @@
         <menu>
             <item
                 android:id="@+id/helpSupport"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/ic_help"
                 android:title="Help and Support"/>
             <item
                 android:id="@+id/aboutMFine"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/m_fine_logo"
                 android:title="About MFine"/>
             <item
                 android:id="@+id/termsConditions"
@@ -54,7 +54,7 @@
                 android:title="Terms and Conditions"/>
             <item
                 android:id="@+id/privacyPolicy"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/ic_lock"
                 android:title="Privacy Policy"/>
         </menu>
     </item>
@@ -62,7 +62,7 @@
         <menu>
             <item
                 android:id="@+id/setting"
-                android:icon="@drawable/ic_plus"
+                android:icon="@drawable/ic_setting"
                 android:title="Settings"/>
         </menu>
     </item>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mfineapplication">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,9 +25,7 @@
             android:exported="true">
 
         </activity>
-        <activity android:name=".WalletActivity">
-
-        </activity>
+        <activity android:name=".WalletActivity"></activity>
         <activity android:name=".Supporter">
 
         </activity>
@@ -38,9 +38,7 @@
             android:name=".SignUp"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".SplashActivity">
-
-        </activity>
+        <activity android:name=".SplashActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
