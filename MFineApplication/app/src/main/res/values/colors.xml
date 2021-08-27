@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#ff654d</color>
     <color name="transparent">#00000000</color>
+    <color name="light_pink">#ffe5ee</color>
+    <color name="very_light_pink">#fff5f6</color>
+    <color name="very_light_blue">#f2f9ff</color>
+    <color name="light_blue">#d9eeff</color>
+    <color name="blue">#08478e</color>
 </resources>

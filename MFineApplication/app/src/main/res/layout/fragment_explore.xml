@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,82 +7,457 @@
     android:orientation="vertical"
     tools:context=".Fragments.FragmentExplore">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawableLayout"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
 
-            <RelativeLayout
-                android:id="@+id/relativeLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="55dp"
-                android:layout_marginBottom="55dp" />
+            <ImageView
+                android:id="@+id/ivMenuBarIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:elevation="6dp"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvYourLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivMenuBarIcon"
+                android:text="your location"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvYourLocation"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toRightOf="@id/ivMenuBarIcon"
+                android:text="Mumbai"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Your Location"
-                            android:textColor="@color/black"
-                            android:textSize="10sp" />
+            <ImageView
+                android:id="@+id/ivWalletIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_toLeftOf="@+id/ivNotificationIcon"
+                android:src="@drawable/wallet" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Mumbai"
-                            android:textSize="10sp" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="6" />
-
-                    <ImageButton
-                        android:id="@+id/wallet_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        android:src="@drawable/wallet_icon" />
-
-                    <ImageButton
-                        android:id="@+id/notification_btn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5"
-                        android:background="@color/white"
-                        android:padding="10dp"
-                        android:src="@drawable/notification_icon" />
-                </LinearLayout>
-            </androidx.appcompat.widget.Toolbar>
+            <ImageView
+                android:id="@+id/ivNotificationIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notification_icon" />
 
         </RelativeLayout>
-    </androidx.drawerlayout.widget.DrawerLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="3">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvOnlineConsultations"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:backgroundTint="@color/light_pink"
+                            android:elevation="50dp"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Online\nConsultations"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="70dp"
+                        android:src="@drawable/online_consultation" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvAtHomeLabTest"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:backgroundTint="@color/very_light_pink"
+                            android:elevation="50dp"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="At-Home\nLab Tests"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="70dp"
+                        android:src="@drawable/online_consultation" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvCovid"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:backgroundTint="@color/very_light_blue"
+                            android:elevation="50dp"
+                            app:cardCornerRadius="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="COVID-19\nCare"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="70dp"
+                        android:src="@drawable/online_consultation" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdSubscription"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/light_blue"
+                        android:padding="10dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/buy_subscription"
+                            app:tint="@color/blue" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cdSubscription"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Buy\nSubscription"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdSelfChecks"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/light_blue"
+                        android:padding="10dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/self_checks"
+                            app:tint="@color/blue" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cdSelfChecks"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Start\nSelf-Checks"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdDiabetes"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/light_blue"
+                        android:padding="10dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/diabetes_care"
+                            app:tint="@color/blue" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cdDiabetes"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Diabetes\nCare\nProgram"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdReadHealthTips"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/light_blue"
+                        android:padding="10dp"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/read_health_tips"
+                            app:tint="@color/blue" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cdReadHealthTips"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Read Health\nTips"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:elevation="50dp"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/m_fine_care" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginTop="330dp"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@color/orange"
+                        android:paddingHorizontal="30dp"
+                        android:text="Buy Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/btnExploreMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/orange_rectangle"
+                android:padding="5dp"
+                android:text="Explore More"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</RelativeLayout>
