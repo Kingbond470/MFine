@@ -7,6 +7,7 @@
     tools:context=".WalletActivity">
 
     <TextView
+        android:id="@+id/backToHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -25,7 +26,6 @@
         android:src="@drawable/wallet_logo" />
 
 
-
     <TextView
         android:id="@+id/wallet_title"
         android:layout_width="wrap_content"
@@ -36,6 +36,7 @@
         android:textColor="#000000"
         android:textSize="15dp"
         android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
