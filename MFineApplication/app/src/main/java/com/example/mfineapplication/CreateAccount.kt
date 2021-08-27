@@ -95,7 +95,7 @@ class CreateAccount : AppCompatActivity() {
             var name:String=etNameCreateAccount.text.toString()
             var password:String=etSetPasswordCreateAccount.text.toString()
             var email:String=etEmailCreateAccount.text.toString()
-          var phone: String =intent.getStringExtra("phone")!!
+          var phone: String? =intent?.getStringExtra("phone")
 
             var sexType:String=sex.toString()
             var user=User(name,password,phone,email,sexType)

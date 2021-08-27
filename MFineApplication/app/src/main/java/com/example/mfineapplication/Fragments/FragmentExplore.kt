@@ -15,12 +15,12 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        ivNotificationIcon.setOnClickListener {
+        notification_btn.setOnClickListener {
             val intent = Intent(context, Supporter::class.java)
             intent.putExtra("token", "notificationFragment")
             startActivity(intent)
         }
-        ivWalletIcon.setOnClickListener {
+        wallet_btn.setOnClickListener {
             launchWallet()
         }
 
