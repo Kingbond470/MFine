@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MFineApplication">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,9 @@
             android:exported="true">
 
         </activity>
-        <activity android:name=".WalletActivity"></activity>
+        <activity android:name=".WalletActivity">
+
+        </activity>
         <activity android:name=".Supporter">
 
         </activity>
@@ -38,7 +40,9 @@
             android:name=".SignUp"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
