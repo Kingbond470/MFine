@@ -30,7 +30,7 @@ class CreateAccount : AppCompatActivity() {
         setContentView(R.layout.activity_create_account)
 
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
-        Toast.makeText(applicationContext,intent.getStringExtra("phone"),Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext,intent?.getStringExtra("phone").toString(),Toast.LENGTH_SHORT).show()
 
 
 //        fun onRadioButtonClicked(view: View) {
