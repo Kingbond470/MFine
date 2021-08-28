@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".ExploreMoreActivity">
 
     <LinearLayout
@@ -339,6 +338,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/video1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
@@ -352,6 +352,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/video2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
@@ -365,6 +366,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/video3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
@@ -378,6 +380,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/video4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
@@ -391,6 +394,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/video5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
@@ -404,6 +408,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/video6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
@@ -416,8 +421,6 @@
                 android:id="@+id/explore_recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/activity_explore_more"
                 android:layout_margin="10dp" />
         </LinearLayout>
     </ScrollView>

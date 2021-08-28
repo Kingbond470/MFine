@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MFineApplication">
+        <activity android:name=".OrderMedicineActivity">
+
+        </activity>
         <activity
             android:name=".SymptomDetailActivity"
             android:exported="true" />
@@ -25,7 +28,8 @@
             android:name=".SearchActivity"
             android:exported="true" />
         <activity android:name=".WalletActivity" />
-        <activity android:name=".Supporter" />
+        <activity android:name=".Supporter"
+            android:exported="true"/>
 
         <activity
             android:name=".SignUp"
