@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.item_layout.view.*
 class SymptomsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun setData(heartRelatedModel: SymptomsModel) {
         itemView.apply {
-            Glide.with(ivImage).load(heartRelatedModel.ivUrl).into(ivImage)
+                Glide.with(ivImage).load(heartRelatedModel.ivUrl).into(ivImage)
             tvSymptomName.text = heartRelatedModel.tvSymptoms
         }
     }

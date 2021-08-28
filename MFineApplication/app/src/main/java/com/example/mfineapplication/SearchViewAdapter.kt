@@ -27,7 +27,7 @@ class SearchViewAdapter(var context: Context, var userDataList: List<SymptomsMod
         ItemAnimation.animateFadeIn(holder.itemView, position)
         holder.itemView.setOnClickListener {
             val intent = Intent(context, SymptomDetailActivity::class.java)
-            intent.putExtra("username", filteredUserDataList[position].tvSymptoms)
+            intent.putExtra("symptomsName", filteredUserDataList[position].tvSymptoms)
             context.startActivity(intent)
         }
         holder.mIvImage.setOnClickListener {

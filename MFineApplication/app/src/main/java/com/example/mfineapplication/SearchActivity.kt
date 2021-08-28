@@ -4,22 +4,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.widget.EditText
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_search.*
 import java.util.ArrayList
 
 class SearchActivity : AppCompatActivity() {
-    var userRecycler: RecyclerView? = null
     var recyclerviewAdapter: SearchViewAdapter? = null
-    var searchView: EditText? = null
     var search: CharSequence = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
-        searchView = findViewById(R.id.etSearchData)
         val userDataList: MutableList<SymptomsModel> = ArrayList()
         userDataList.add(SymptomsModel("https://i.postimg.cc/8zCVfrxg/fever.jpg", "Fever"))
         userDataList.add(SymptomsModel("https://i.postimg.cc/Kjb6GKtV/sneezing.jpg", "Dark Circles"))
@@ -73,7 +68,6 @@ class SearchActivity : AppCompatActivity() {
     }
 
     private fun setUserRecycler(userDataList: List<SymptomsModel>) {
-        userRecycler = findViewById(R.id.recyclerView)
         val layoutManager: RecyclerView.LayoutManager = GridLayoutManager(this,2)
         recyclerView.setLayoutManager(layoutManager)
         recyclerviewAdapter = SearchViewAdapter(this, userDataList)

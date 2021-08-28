@@ -1,15 +1,29 @@
 package com.example.mfineapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mfineapplication.Fragments.FragmentExplore
+import kotlinx.android.synthetic.main.activity_consult_now.*
 import java.util.ArrayList
 
 class ConsultNow : AppCompatActivity() {
+    var recyclerviewAdapter: SearchViewAdapter? = null
+    var search: CharSequence = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consult_now)
+        btnBackConsultNow.setOnClickListener{
+            val intent=Intent(applicationContext,FragmentExplore::class.java)
+            startActivity(intent)
+        }
+        etSearchForSymptomsBtn.setOnClickListener {
+            val intent= Intent(applicationContext,SearchActivity::class.java)
+            startActivity(intent)
+        }
+
         browseHeartRelatedProblems()
         browseSurgeryRelatedIssue()
         browseMentalHealthIssue()

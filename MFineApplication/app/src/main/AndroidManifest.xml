@@ -16,18 +16,18 @@
             android:name=".CreateAccount"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ConsultNow"
             android:exported="true" />
         <activity
             android:name=".ExploreMoreActivity"
             android:exported="true" />
         <activity
-            android:name=".ConsultNow"
+            android:name=".SearchActivity"
             android:exported="true" />
         <activity android:name=".WalletActivity" />
         <activity android:name=".Supporter" />
         <activity
-            android:name=".SearchActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,7 @@
         <activity
             android:name=".SignUp"
             android:exported="true" />
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
