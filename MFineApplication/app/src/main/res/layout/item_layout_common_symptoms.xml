@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdSymptomsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/ivSymptomsImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/diabetes_care"
+            app:tint="@color/blue" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tvSymptomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cdSymptomsImage"
+        android:layout_centerHorizontal="true"
+        android:text="COVID-19"
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+</RelativeLayout>

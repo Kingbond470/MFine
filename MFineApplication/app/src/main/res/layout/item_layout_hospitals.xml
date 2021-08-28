@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_height="110dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdHospitalImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/ivHospitalImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hospital_sparsh"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:elevation="10dp"
+        app:cardCornerRadius="20sp">
+
+        <TextView
+            android:id="@+id/tvHospitalName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Sparsh Hospitals"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
