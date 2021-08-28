@@ -10,31 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MFineApplication">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ExploreMoreActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".ConsultNow"
-            android:exported="true">
-
-        </activity>
-        <activity android:name=".WalletActivity">
-
-        </activity>
-        <activity android:name=".Supporter">
-
-        </activity>
+            android:name=".SymptomDetailActivity"
+            android:exported="true" />
         <activity
             android:name=".CreateAccount"
-            android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".ConsultNow"
+            android:exported="true" />
+        <activity
+            android:name=".ExploreMoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true" />
+        <activity android:name=".WalletActivity" />
+        <activity android:name=".Supporter" />
 
-        </activity>
         <activity
             android:name=".SignUp"
             android:exported="true" />
@@ -45,6 +37,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fabbd0a-afa3-4fd5-887c-252aec865b5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MFineApplication/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MFineApplication/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MFineApplication/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MFineApplication/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MFineApplication/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MFineApplication/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

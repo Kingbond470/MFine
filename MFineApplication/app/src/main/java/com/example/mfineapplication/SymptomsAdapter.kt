@@ -6,8 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import java.util.ArrayList
 
 
-class SymptomsAdapter(private val heartRelatedModels: ArrayList<SymptomsModel>) :
-    RecyclerView.Adapter<SymptomsViewHolder>() {
+class SymptomsAdapter(private val heartRelatedModels: ArrayList<SymptomsModel>) : RecyclerView.Adapter<SymptomsViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SymptomsViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
         return SymptomsViewHolder(view)
