@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C9F4DADA"
+    android:background="#AEB9E6EC"
     android:orientation="vertical"
     tools:context=".OrderMedicineActivity">
 
