@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import com.google.firebase.FirebaseException
@@ -37,12 +38,13 @@ class SignUp : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         //binding= ActivityMainBinding.inflate(layoutInflater)
         //setContentView(binding.root)
 
 
         setContentView(R.layout.activity_sign_up)
+
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         etMobileNumber.doAfterTextChanged {
             if (etMobileNumber.text.toString().trim().length == 10) {
@@ -269,10 +271,14 @@ class SignUp : AppCompatActivity() {
                     val phone = firebaseAuth.currentUser?.phoneNumber
                     Toast.makeText(this, "Loggin in as $phone", Toast.LENGTH_SHORT).show()
 
+                    //sending phone number to next page
+//                    val bundle=Bundle();
+//                    bundle.putString("phone",phone)
+
                     if(etOtp.text.toString().length==6) {
                         // start profile actiivity
                         val intent = Intent(baseContext, CreateAccount::class.java)
-
+                        intent.putExtra("phone",phone)
                         startActivity(intent)
                     }
 

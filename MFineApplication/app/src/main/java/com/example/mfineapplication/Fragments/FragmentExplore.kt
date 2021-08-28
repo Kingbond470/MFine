@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.mfineapplication.ExploreMoreActivity
 import com.example.mfineapplication.Supporter
 import com.example.mfineapplication.R
 import com.example.mfineapplication.WalletActivity
@@ -21,6 +22,11 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
         }
         wallet_btn.setOnClickListener {
             launchWallet()
+        }
+
+        btnExploreMore.setOnClickListener{
+            val intent=Intent(context,ExploreMoreActivity::class.java)
+            startActivity(intent)
         }
     }
 

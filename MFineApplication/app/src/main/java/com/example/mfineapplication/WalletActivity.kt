@@ -1,5 +1,6 @@
 package com.example.mfineapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,12 @@ class WalletActivity : AppCompatActivity() {
 
         coin_btn.setOnClickListener {
             buttonCoin()
+        }
+
+        // return to home page
+        backToHome.setOnClickListener {
+            val intent=Intent(applicationContext,MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
