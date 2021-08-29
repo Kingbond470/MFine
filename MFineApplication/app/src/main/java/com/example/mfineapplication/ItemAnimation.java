@@ -7,7 +7,7 @@ import android.view.View;
 public class ItemAnimation {
     private static final long DURATION_IN_BOTTOM_UP = 150;
     private static final long DURATION_IN_FADE_ID = 500;
-    private static final long DURATION_IN_LEFT_RIGHT = 150;
+    private static final long DURATION_IN_LEFT_RIGHT = 100;
     private static final long DURATION_IN_RIGHT_LEFT = 150;
     public static void animateFadeIn(View view, int position) {
         boolean not_first_item = position == -1;

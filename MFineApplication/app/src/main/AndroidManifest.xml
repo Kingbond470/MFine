@@ -16,7 +16,13 @@
             android:name=".AppointmentConfirmationActivity"
             android:exported="true" />
         <activity
+            android:name=".PatientRegistrationActivity"
+            android:exported="true" />
+        <activity
             android:name=".SymptomDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConsultNow"
             android:exported="true" />
         <activity
             android:name=".CreateAccount"

@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/ivMenuBarIcon"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
@@ -52,21 +52,21 @@
 
             <ImageView
                 android:id="@+id/wallet_btn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_centerVertical="true"
                 android:layout_marginHorizontal="20dp"
                 android:layout_toLeftOf="@+id/notification_btn"
-                android:src="@drawable/wallet_icon" />
+                android:src="@drawable/wallet_icon_nav" />
 
             <ImageView
                 android:id="@+id/notification_btn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/notification_icon" />
+                android:src="@drawable/bell" />
 
         </RelativeLayout>
 
