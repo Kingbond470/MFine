@@ -153,7 +153,8 @@
                     <ImageView
                         android:id="@+id/pcr_test"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                       />
 
                 </androidx.cardview.widget.CardView>
 
@@ -202,7 +203,7 @@
                     <TextView
 
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/price_bg"
@@ -224,11 +225,11 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/covid_test"
+                        android:id="@+id/covid_check"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
-                        android:src="@drawable/pcr_test" />
+                        android:src="@drawable/covid_check" />
 
                     <TextView
 

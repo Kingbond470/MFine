@@ -80,6 +80,8 @@ dependencies {
     // okhttp library used to observe the api call logs on LogCat
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
     //shimmmer effect
     compile 'com.romainpiel.shimmer:library:1.4.0@aar'
 
