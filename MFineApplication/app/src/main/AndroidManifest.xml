@@ -4,14 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/m_fine_logo_2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/m_fine_logo_2"
         android:supportsRtl="true"
         android:theme="@style/Theme.MFineApplication">
-        <activity android:name=".OrderMedicineActivity">
-
-        </activity>
+        <activity android:name=".HelpAndSupport" />
+        <activity android:name=".OrderMedicineActivity" />
+        <activity android:name=".EditProfile" />
         <activity
             android:name=".SymptomDetailActivity"
             android:exported="true" />
@@ -28,9 +28,9 @@
             android:name=".SearchActivity"
             android:exported="true" />
         <activity android:name=".WalletActivity" />
-        <activity android:name=".Supporter"
-            android:exported="true"/>
-
+        <activity
+            android:name=".Supporter"
+            android:exported="true" />
         <activity
             android:name=".SignUp"
             android:exported="true" />

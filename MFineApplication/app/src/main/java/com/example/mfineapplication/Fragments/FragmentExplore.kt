@@ -13,6 +13,7 @@ import com.example.mfineapplication.Model.Hospitals
 import com.example.mfineapplication.Supporter
 import com.example.mfineapplication.R
 import com.example.mfineapplication.WalletActivity
+import com.romainpiel.shimmer.Shimmer
 import kotlinx.android.synthetic.main.fragment_explore.*
 
 class FragmentExplore : Fragment(R.layout.fragment_explore) {
@@ -24,6 +25,7 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         notification_btn.setOnClickListener {
             val intent = Intent(context, Supporter::class.java)
@@ -39,6 +41,10 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
             startActivity(intent)
         }
 
+        val shimmer=Shimmer()
+        shimmer.start(tvSearchExplore)
+        shimmer.start(tvSeeMore)
+
 
         setRecyclerViewData()
         setRecyclerView()
@@ -52,8 +58,29 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
 
     private fun setRecyclerViewData() {
         //for Common Symptoms
-        for(i in 1..20) {
-            listOfSymptoms.add(CommonSymptoms(R.drawable.diabetes_care, "COVID-19"))
+        for(i in 1..2) {
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_coronavirus, "COVID-19"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_pad, "Period Issue"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_acne, "Acne/Pimples"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_fever, "Fever"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_depression, "Depression"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_anxiety, "Anxiety"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_pregancy, "Pregnancy Queries"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_packpain, "Back Pain"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_acidity, "Acidity"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_headache, "Headache"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.diabetes_care, "Diabetes"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_cough, "Coughs"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_harifall, "Hair fall"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_weightloss, "Weight loss"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_capsule, "Erectile Dysfunction"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_urinary, "Urinary Tract Infections"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_stomach, "Stomach Ache"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_pile, "Piles"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_throat, "Throat Pain"))
+            listOfSymptoms.add(CommonSymptoms(R.drawable.sym_diheria, "Constipation"))
+
+
         }
 
         //for Hospitals

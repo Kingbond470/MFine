@@ -12,4 +12,7 @@
     <string name="surgeries_second_opinions"><![CDATA[Surgeries & Second Opinions]]></string>
     <string name="diet_nutrition_counsellings"><![CDATA[Diet & Nutrition counsellings]]></string>
     <string name="prescription">Your prescription will be securely shared only with pharmacist necessary for the completion of this order</string>
+    <string name="contact_us">Help And Support</string>
+    <string name="check_box_string">I hereby declare that I am lawfully authorised to\nprovide the above information on behalf of the owner\nof the information</string>
+
 </resources>

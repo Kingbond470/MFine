@@ -56,8 +56,7 @@
         android:hint="Name"
         android:padding="18dp"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
 
     <FrameLayout
@@ -77,8 +76,7 @@
             android:hint="Set a Password"
             android:padding="18dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <ImageButton
             android:id="@+id/btnShowHide"
@@ -104,8 +102,7 @@
         android:hint="Personal Email (Optional)"
         android:padding="18dp"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tvSelectYourGender"
@@ -117,8 +114,7 @@
         android:padding="10dp"
         android:text="Select Your Gender"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="18sp" />
 
     <RadioGroup
         android:id="@+id/radioGroupSelectGender"
@@ -135,6 +131,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
             android:background="@drawable/radio_button_bg"
+            android:fontFamily="@font/roboto"
             android:padding="10dp"
             android:text="Male"
             android:textSize="15sp" />
@@ -147,6 +144,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
             android:background="@drawable/radio_button_bg"
+            android:fontFamily="@font/roboto"
             android:padding="10dp"
             android:text="Female"
             android:textSize="15sp" />
@@ -159,6 +157,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
             android:background="@drawable/radio_button_bg"
+            android:fontFamily="@font/roboto"
             android:padding="10dp"
             android:text="Others"
             android:textSize="15sp" />
@@ -199,14 +198,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginVertical="10dp"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="5dp">
 
         <Button
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF0000"
+            android:fontFamily="@font/roboto"
             android:paddingHorizontal="50dp"
             android:text="CREATE"
             android:textColor="@color/white"

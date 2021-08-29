@@ -53,14 +53,14 @@
         android:layout_above="@+id/cdOtp"
         android:layout_marginVertical="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         app:cardCornerRadius="13dp"
         app:layout_constraintBottom_toTopOf="@id/cdOtp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="9dp">
+        tools:layout_editor_absoluteY="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -80,8 +80,8 @@
                 android:layout_height="40dp"
                 android:layout_marginHorizontal="10dp"
                 android:layout_toEndOf="@+id/ivIndianFlag"
-                android:background="#BFBCBC"
-                android:layout_toRightOf="@+id/ivIndianFlag" />
+                android:layout_toRightOf="@+id/ivIndianFlag"
+                android:background="#BFBCBC" />
 
             <TextView
                 android:id="@+id/tvStdCode"
@@ -89,12 +89,12 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/view"
+                android:layout_toRightOf="@+id/view"
                 android:fontFamily="@font/roboto"
                 android:text="+91"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_toRightOf="@+id/view" />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/etMobileNumber"
@@ -102,6 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_toEndOf="@+id/tvStdCode"
                 android:layout_toRightOf="@+id/frameLayout"
                 android:background="@null"
@@ -112,16 +113,15 @@
                 android:maxLength="10"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp" />
+                android:textStyle="bold" />
 
             <FrameLayout
                 android:id="@+id/frameLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true">
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
 
                 <ImageButton
                     android:id="@+id/imgBtnConfirm"
@@ -152,15 +152,15 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:layout_marginBottom="10dp"
         android:visibility="gone"
         app:cardCornerRadius="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="9dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -173,6 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
                 android:background="@null"
                 android:fontFamily="@font/roboto"
                 android:hint="Enter OTP"
@@ -182,8 +183,7 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="10dp" />
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

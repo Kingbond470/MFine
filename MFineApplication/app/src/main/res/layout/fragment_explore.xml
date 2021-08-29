@@ -467,13 +467,15 @@
                         android:backgroundTint="@color/teal_700"
                         app:cardCornerRadius="12dp">
 
-                        <TextView
+                        <com.romainpiel.shimmer.ShimmerTextView
+                            android:id="@+id/tvSearchExplore"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="10dp"
                             android:layout_marginVertical="5dp"
                             android:text="Search"
-                            android:textColor="@color/white"
+                            app:reflectionColor="@color/white"
+                            android:textColor="@color/light_grey"
                             android:textSize="15sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -789,6 +791,49 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/discount_coupon_paytm" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/discount_coupon_icici" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -819,13 +864,15 @@
                         android:backgroundTint="@color/teal_700"
                         app:cardCornerRadius="12dp">
 
-                        <TextView
+                        <com.romainpiel.shimmer.ShimmerTextView
+                            android:id="@+id/tvSeeMore"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="10dp"
                             android:layout_marginVertical="5dp"
                             android:text="See More"
-                            android:textColor="@color/white"
+                            android:textColor="@color/light_grey"
+                            app:reflectionColor="@color/white"
                             android:textSize="15sp" />
 
                     </androidx.cardview.widget.CardView>
