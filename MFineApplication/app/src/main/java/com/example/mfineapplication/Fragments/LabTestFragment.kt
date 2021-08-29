@@ -32,7 +32,7 @@ class LabTestFragment : Fragment(R.layout.fragment_lab_test) {
 
         Glide.with(new_launch).load("https://i.postimg.cc/J0YKJtWQ/new-launch.jpg").into(new_launch)
         Glide.with(body_check).load("https://i.postimg.cc/02rVvGpX/body-check.jpg").into(body_check)
-        Glide.with(pcr_test).load("https://i.postimg.cc/59ssDKFF/pcr-test.jpg").into(pcr_test)
+        Glide.with(pcr_test).load("https://i.postimg.cc/FscmvPwD/pcr-test.jpg").into(pcr_test)
         Glide.with(care_plush).load("https://i.postimg.cc/C5xmzk91/care-plush.jpg").into(care_plush)
      //   Glide.with(advance_full_body_check).load("https://i.postimg.cc/q7wjJ9Kd/advance-full-body-check.jpg").into(advance_full_body_check)
       // Glide.with(covid_test).load("https://i.postimg.cc/zvbjkvcJ/covide-test.jpg").into(covid_test)
