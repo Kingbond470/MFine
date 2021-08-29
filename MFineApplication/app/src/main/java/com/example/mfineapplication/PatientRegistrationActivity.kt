@@ -18,63 +18,48 @@ class PatientRegistrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_patient_registration)
         register?.setOnClickListener {
-            SetValidation()
+            launchConfirmation()
         }
-        val s = intent.getStringExtra("symptomsName")
-        tvPatientSymptomsName.setText(s)
     }
 
-    fun SetValidation(): Boolean {
-        // Check for a valid name
-        if (name!!.text.toString().isEmpty()) {
-            nameError!!.error = resources.getString(R.string.name_error)
-            isNameValid = false
-        } else {
-            isNameValid = true
-            nameError!!.isErrorEnabled = false
-        }
-
-        // Check for a valid email address
-        if (email!!.text.toString().isEmpty()) {
-            emailError!!.error = resources.getString(R.string.email_error)
-            isEmailValid = false
-        } else if (!Patterns.EMAIL_ADDRESS.matcher(email!!.text.toString()).matches()) {
-            emailError!!.error = resources.getString(R.string.error_invalid_email)
-            isEmailValid = false
-        } else {
-            isEmailValid = true
-            emailError!!.isErrorEnabled = false
-        }
-
-        // Check for a valid phone number
-        if (phone!!.text.toString().isEmpty()) {
-            phoneError!!.error = resources.getString(R.string.phone_error)
-            isPhoneValid = false
-        } else {
-            isPhoneValid = true
-            phoneError!!.isErrorEnabled = false
-        }
-
-        // Check for a valid password
-        if (password!!.text.toString().isEmpty()) {
-            passError!!.error = resources.getString(R.string.password_error)
-            isPasswordValid = false
-        } else if (password!!.text.length < 6) {
-            passError!!.error = resources.getString(R.string.error_invalid_password)
-            isPasswordValid = false
-        } else {
-            isPasswordValid = true
-            passError!!.isErrorEnabled = false
-        }
-        if (isNameValid && isEmailValid && isPhoneValid && isPasswordValid) {
-            Toast.makeText(applicationContext, "Your Appointment Booked", Toast.LENGTH_SHORT).show()
-            val intent1 = Intent(this,AppointmentConfirmationActivity::class.java)
-            intent1.putExtra("name_value", name.text.toString())
-            intent1.putExtra("emailId_value", email.text.toString())
-            intent1.putExtra("mobileNo_value", phone.text.toString())
-            startActivity(intent1)
-        }
-        return false
+//    private fun SetValidation(): Boolean {
+//        // Check for a valid name
+//        if (name?.text.toString().isEmpty()) {
+//            name.error = "Enter name"
+//            isNameValid = false
+//        } else {
+//            isNameValid = true
+//           name.isEnabled = false
+//        }
+//
+//
+//        // Check for a valid phone number
+//        if (phone?.text.toString().isEmpty()) {
+//            phone.error = "Enter Phone"
+//            isPhoneValid = false
+//        } else {
+//            isPhoneValid = true
+//            phone.isEnabled = false
+//        }
+//
+//        // Check for a valid password
+//        if (address?.text.toString().isEmpty()) {
+//            address.error = "Enter address"
+//            isPasswordValid = false
+//        } else {
+//            isPasswordValid = true
+//            address.isEnabled = false
+//        }
+//
+//        return false
+//    }
+    private fun launchConfirmation(){
+                Toast.makeText(applicationContext, "Your Appointment Booked", Toast.LENGTH_SHORT).show()
+                val intent1 = Intent(this,AppointmentConfirmationActivity::class.java)
+                intent1.putExtra("name_value", name.text.toString())
+                intent1.putExtra("address_value", address.text.toString())
+                intent1.putExtra("mobileNo_value", phone.text.toString())
+                startActivity(intent1)
     }
 }
 

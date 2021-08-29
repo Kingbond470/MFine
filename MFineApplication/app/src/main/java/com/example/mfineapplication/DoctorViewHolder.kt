@@ -6,7 +6,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.doctor_itemlayout.view.*
 import kotlinx.android.synthetic.main.item_layout.view.*
 
-class DoctorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class DoctorViewHolder(itemView: View,private val onClickListener: OnClickListener) : RecyclerView.ViewHolder(itemView) {
 
     fun setData(doctorModelList: DoctorModel) {
         itemView.apply {
@@ -17,6 +17,10 @@ class DoctorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             tvPost.text = doctorModelList.post
             tvLanguage.text = doctorModelList.language
             tvExperience.text = doctorModelList.experience
+            btnConsultNowToDoctor.setOnClickListener {
+                onClickListener.getData(adapterPosition,doctorModelList)
+            }
         }
+
     }
 }

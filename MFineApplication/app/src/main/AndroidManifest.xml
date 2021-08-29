@@ -22,7 +22,7 @@
             android:name=".CreateAccount"
             android:exported="true" />
         <activity
-            android:name=".ConsultNow"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".ExploreMoreActivity"
@@ -33,7 +33,7 @@
         <activity android:name=".WalletActivity" />
         <activity android:name=".Supporter" />
         <activity
-            android:name=".PatientRegistrationActivity"
+            android:name=".ConsultNow"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
         <activity
             android:name=".SignUp"
             android:exported="true" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".PatientRegistrationActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
