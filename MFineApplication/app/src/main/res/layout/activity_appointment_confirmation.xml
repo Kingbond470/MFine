@@ -98,14 +98,14 @@
                     android:textSize="18sp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Email :- "/>
+                    android:text="Address :- "/>
                 <TextView
                     android:id="@+id/tvPatientEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="20sp"
-                    android:text="imreprisal@gmail.com"/>
+                    android:text="Mumbai"/>
             </LinearLayout>
         </LinearLayout>
    </androidx.cardview.widget.CardView>
@@ -114,12 +114,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="20dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:background="@color/light_blue"
         android:textSize="16sp"
         android:padding="5dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:text="Ok"/>
 </LinearLayout>

@@ -56,9 +56,9 @@ class PatientRegistrationActivity : AppCompatActivity() {
     private fun launchConfirmation(){
                 Toast.makeText(applicationContext, "Your Appointment Booked", Toast.LENGTH_SHORT).show()
                 val intent1 = Intent(this,AppointmentConfirmationActivity::class.java)
-                intent1.putExtra("name_value", name.text.toString())
-                intent1.putExtra("address_value", address.text.toString())
-                intent1.putExtra("mobileNo_value", phone.text.toString())
+                intent1.putExtra("name", etAppointName.text.toString())
+                intent1.putExtra("address", etAppointAddress.text.toString())
+                intent1.putExtra("mobile", etAppointNumber.text.toString())
                 startActivity(intent1)
     }
 }

@@ -152,7 +152,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/name"
+                    android:id="@+id/etAppointName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -169,12 +169,14 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/etAppointNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:hint="Phone Number"
                     android:textColor="@color/black"
                     android:maxLength="10"
+                    android:inputType="number"
                     android:textSize="18sp" />
 
                 <TextView
@@ -187,6 +189,7 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/etAppointAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
