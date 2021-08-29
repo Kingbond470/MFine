@@ -44,6 +44,7 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
         val shimmer=Shimmer()
         shimmer.start(tvSearchExplore)
         shimmer.start(tvSeeMore)
+        //shimmer.start(btnExploreMore)
 
 
         setRecyclerViewData()

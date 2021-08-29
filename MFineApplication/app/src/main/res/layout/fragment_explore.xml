@@ -176,7 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_marginBottom="70dp"
-                        android:src="@drawable/online_consultation" />
+                        android:src="@drawable/at_home_lab_tests" />
 
                 </FrameLayout>
 
@@ -221,7 +221,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:layout_marginBottom="70dp"
-                        android:src="@drawable/online_consultation" />
+                        android:src="@drawable/covid_care" />
 
                 </FrameLayout>
 
@@ -890,7 +890,7 @@
             </LinearLayout>
 
 
-            <Button
+            <com.romainpiel.shimmer.ShimmerButton
                 android:id="@+id/btnExploreMore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
