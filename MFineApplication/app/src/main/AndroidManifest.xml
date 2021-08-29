@@ -13,13 +13,19 @@
         <activity android:name=".OrderMedicineActivity" />
         <activity android:name=".EditProfile" />
         <activity
+            android:name=".AppointmentConfirmationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
             android:name=".SymptomDetailActivity"
             android:exported="true" />
         <activity
             android:name=".CreateAccount"
             android:exported="true" />
         <activity
-            android:name=".ConsultNow"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".ExploreMoreActivity"
@@ -39,12 +45,18 @@
 
         </activity>
         <activity android:name=".MainActivity">
+            android:name=".ConsultNow"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity android:name=".PatientRegistrationActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

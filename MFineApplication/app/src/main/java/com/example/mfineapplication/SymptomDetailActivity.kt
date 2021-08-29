@@ -1,14 +1,16 @@
 package com.example.mfineapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_symptom_detail.*
+import kotlinx.android.synthetic.main.doctor_itemlayout.*
 import java.util.ArrayList
 
-class SymptomDetailActivity : AppCompatActivity() {
+class SymptomDetailActivity : AppCompatActivity(),OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_symptom_detail)
@@ -27,9 +29,17 @@ class SymptomDetailActivity : AppCompatActivity() {
         doctorModels.add(DoctorModel("https://i.postimg.cc/HkmKS33R/nishant.jpg", "Bihar","Nishant Rishab","MBBS(Intern)","Physician","English,Hindi","1.5 years experience"))
         doctorModels.add(DoctorModel("https://i.postimg.cc/RZTY2fDF/saikrishna.jpg", "Bangalore","Sai Krishna","MBBS","Physician","English","4 years experience"))
         doctorModels.add(DoctorModel("https://i.postimg.cc/rydvzDKn/yogesh.jpg", "Bangalore","Yogesh Bhat","MBBS,DNB(General Medicine)","Physician","English","15 years experience"))
-        val doctorAdapter = DoctorAdapter(doctorModels)
+        val doctorAdapter = DoctorAdapter(doctorModels,this)
         val linearLayoutManager = LinearLayoutManager(this)
         rvRecyclerView.adapter = doctorAdapter
         rvRecyclerView.layoutManager = linearLayoutManager
+    }
+
+    override fun getData(position: Int, result: DoctorModel) {
+        Toast.makeText(this, "Now you are one step behind", Toast.LENGTH_SHORT).show()
+        btnConsultNowToDoctor.setOnClickListener {
+            val intent = Intent(this, PatientRegistrationActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
