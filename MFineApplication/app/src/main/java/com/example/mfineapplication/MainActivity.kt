@@ -9,6 +9,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.mfineapplication.Fragments.FragmentExplore
 import com.example.mfineapplication.Fragments.FragmentHealthFiles
+import com.example.mfineapplication.Fragments.LabTestFragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_supporter.*
@@ -54,8 +55,12 @@ class MainActivity : AppCompatActivity() {
 //                    val intent = Intent(this@MainActivity, MainActivity::class.java)
 //                    startActivity(intent)
 //                    drawableLayout.closeDrawer(GravityCompat.START)
-                    Toast.makeText(this@MainActivity,"Order Lab Test | Work in Process",Toast.LENGTH_SHORT).show()
+                   // Toast.makeText(this@MainActivity,"Order Lab Test | Work in Process",Toast.LENGTH_SHORT).show()
 
+                    supportFragmentManager.beginTransaction().apply {
+                        replace(R.id.frameLayout_for_Fragments, LabTestFragment())
+                            .commit()
+                    }
                 }
 
                 R.id.orderMedicines -> {
