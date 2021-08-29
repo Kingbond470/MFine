@@ -491,6 +491,245 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="3">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdDiabetesScreening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivDiabetesScreening"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/explore_diabetes_care" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdDiabetesScreening"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Diabetes Screening"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdThyroidCare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivThyroidCare"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/explore_thyroid_care" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdThyroidCare"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Thyroid Care"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdLiverFunctionTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivLiverFunctionTest"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/explore_liver_function_test" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdLiverFunctionTest"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Thyroid"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="3">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdRTPCRTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivRTPCRTest"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/explore_rt_pcr_test" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdRTPCRTest"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="RT-PCR Test"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdLipidProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivLipidProfile"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/explore_lipid_profile" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdLipidProfile"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Lipid Profile"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdExploreMoreTest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="15dp">
+
+                            <ImageView
+                                android:id="@+id/ivExploreMoreTest"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/explore_20_more_tests" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cdExploreMoreTest"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Explore 20+ Tests"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
 
             <FrameLayout
                 android:layout_width="match_parent"
