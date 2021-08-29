@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.doctor_itemlayout.view.*
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 class DoctorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
     fun setData(doctorModelList: DoctorModel) {
         itemView.apply {
             Glide.with(ivDoctorImage).load(doctorModelList.doctorImageUrl).into(ivDoctorImage)

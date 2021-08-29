@@ -31,11 +31,7 @@ class SearchViewAdapter(var context: Context, var userDataList: List<SymptomsMod
             context.startActivity(intent)
         }
         holder.mIvImage.setOnClickListener {
-            Toast.makeText(
-                context,
-                "User Name Clicked",
-                Toast.LENGTH_SHORT
-            ).show()
+
         }
     }
 
