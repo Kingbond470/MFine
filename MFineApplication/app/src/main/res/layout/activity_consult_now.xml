@@ -5,36 +5,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ConsultNow">
+
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_margin="10dp"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageButton
-            android:id="@+id/btnBackConsultNow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/back_arrow"
-            android:background="@color/white"/>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBackConsultNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Back"
-            android:fontFamily="@font/roboto"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="12dp"
+            android:text="What is your Concern?"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="12dp"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_height="wrap_content"
-        android:text="What is your Concern?"/>
+
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/etSearchForSymptomsBtn"
@@ -49,18 +55,20 @@
             android:padding="10dp" />
 
         <ScrollView
-        android:layout_width="match_parent"
-        android:scrollbars="none"
-        android:layout_marginBottom="50dp"
-        android:layout_height="wrap_content">
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -70,149 +78,174 @@
                         android:textColor="#1993af"
                         android:textSize="16sp"
                         android:textStyle="bold" />
+
                     <View
                         android:layout_width="wrap_content"
                         android:layout_height="1.5dp"
-                        android:layout_marginStart="18dp"
                         android:layout_gravity="center"
-                        android:background="#77b5fe"
-                        android:layout_marginLeft="18dp" />
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#77b5fe" />
                 </LinearLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvHeartRelatedProblems"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Most Selected Issues"
                         android:textColor="#1993af"
                         android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:text="Most Selected Issues"/>
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="wrap_content"
                         android:layout_height="1.5dp"
-                        android:layout_marginStart="18dp"
                         android:layout_gravity="center"
-                        android:background="#77b5fe"
-                        android:layout_marginLeft="18dp" />
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#77b5fe" />
                 </LinearLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvMostSelectedIssue"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Surgery Related Issues"
                         android:textColor="#1993af"
-                        android:textStyle="bold"
                         android:textSize="16sp"
-                        android:text="Surgery Related Issues"/>
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="wrap_content"
                         android:layout_height="1.5dp"
-                        android:layout_marginStart="18dp"
                         android:layout_gravity="center"
-                        android:background="#77b5fe"
-                        android:layout_marginLeft="18dp" />
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#77b5fe" />
                 </LinearLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvSurgeryRelatedIssues"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Mental Health Issues"
                         android:textColor="#1993af"
-                        android:textStyle="bold"
                         android:textSize="16sp"
-                        android:text="Mental Health Issues"/>
+                        android:textStyle="bold" />
+
                     <View
                         android:layout_width="wrap_content"
                         android:layout_height="1.5dp"
-                        android:layout_marginStart="18dp"
                         android:layout_gravity="center"
-                        android:background="#77b5fe"
-                        android:layout_marginLeft="18dp" />
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#77b5fe" />
                 </LinearLayout>
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvMentalHealthIssues"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="match_parent" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#1993af"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:text="Clinical Genetics"/>
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="1.5dp"
-                    android:layout_marginStart="18dp"
-                    android:layout_gravity="center"
-                    android:background="#77b5fe"
-                    android:layout_marginLeft="18dp" />
-            </LinearLayout>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvClinicalGenetics"
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="match_parent" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clinical Genetics"
+                        android:textColor="#1993af"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#77b5fe" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvClinicalGenetics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#1993af"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:text="@string/diet_nutrition_counsellings"/>
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="1.5dp"
-                    android:layout_marginStart="18dp"
-                    android:layout_gravity="center"
-                    android:background="#77b5fe"
-                    android:layout_marginLeft="18dp" />
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diet_nutrition_counsellings"
+                        android:textColor="#1993af"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#77b5fe" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDietAndNutrition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp" />
             </LinearLayout>
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvDietAndNutrition"
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="match_parent" />
-            </LinearLayout>
-    </ScrollView>
+        </ScrollView>
     </LinearLayout>
+
     <Button
         android:id="@+id/btnChooseDoctor"
-        android:padding="15dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-        android:textColor="@color/black"
-        android:backgroundTint="#bababa"
-        android:text="Choose Doctor"/>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#F4511E"
+        android:paddingVertical="25dp"
+        android:text="Choose Doctor"
+        android:paddingHorizontal="60dp"
+        android:textColor="#FDFDFD" />
 </RelativeLayout>

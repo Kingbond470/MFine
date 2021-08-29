@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ExploreCategoryModel(
     @SerializedName("categoryImage")
-    val categoryImage: Int,
+    val categoryImage: String,
     @SerializedName("categoryName")
     val categoryName: String,
     @SerializedName("categoryDescription")

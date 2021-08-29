@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E8E2E2"
+        android:background="#4FFFD000"
         android:orientation="horizontal"
         android:padding="2dp">
 
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="2dp"
+                android:layout_margin="5dp"
                 android:text="8 unhealthy habits that are Affecting your Productivity"
                 android:textColor="#000000"
                 android:textSize="14dp" />
