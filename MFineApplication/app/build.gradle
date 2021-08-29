@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.mfineapplication"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         multiDexEnabled true
         versionCode 1
@@ -76,11 +76,13 @@ dependencies {
     // Retrofit dependency which will be used to make network calls
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     // GSON library which is used to convert POJO to JSON and vice versa
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
     // okhttp library used to observe the api call logs on LogCat
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
 
     //shimmmer effect
     compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
 
 }

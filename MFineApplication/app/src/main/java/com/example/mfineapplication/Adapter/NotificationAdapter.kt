@@ -19,6 +19,7 @@ class NotificationAdapter(private val notificationList: List<NotificationModel>)
     override fun onBindViewHolder(holder: NotificationViewHolder, position: Int) {
         val model: NotificationModel = notificationList[position]
      //   ItemAnimation.animateLeftRight(holder.itemView, position)
+
         holder.setNotificationData(model)
     }
 

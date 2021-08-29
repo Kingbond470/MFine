@@ -138,19 +138,20 @@
             android:text="15 years exp"
             android:textAlignment="center"
             android:textColor="@color/white" />
+
         <Button
-            android:id="@+id/consultNow"
+            android:id="@+id/btnConsultNowToDoctor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvSpeaks"
-            android:fontFamily="@font/roboto"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/orange"
-            android:layout_marginEnd="10dp"
-            android:text="Consult Now"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
-            android:layout_alignParentRight="true" />
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/roboto"
+            android:text="Consult Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
