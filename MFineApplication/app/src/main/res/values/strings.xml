@@ -12,8 +12,13 @@
     <string name="surgeries_second_opinions"><![CDATA[Surgeries & Second Opinions]]></string>
     <string name="diet_nutrition_counsellings"><![CDATA[Diet & Nutrition counsellings]]></string>
     <string name="prescription">Your prescription will be securely shared only with pharmacist necessary for the completion of this order</string>
-    <string name="contact_us">Help And Support</string>
     <string name="check_box_string">I hereby declare that I am lawfully authorised to\nprovide the above information on behalf of the owner\nof the information</string>
-
     <string name="security">All Safety Protocols followed for At-Home Sample Collection</string>
+    <string name="contact_us">Help And Support</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter your phone number</string>
+    <string name="email_error">Please enter your email address</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
 </resources>

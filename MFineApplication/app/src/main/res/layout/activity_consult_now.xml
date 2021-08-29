@@ -57,7 +57,6 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
             android:scrollbars="none">
 
             <LinearLayout
@@ -237,15 +236,16 @@
         </ScrollView>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnChooseDoctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#F4511E"
-        android:paddingVertical="25dp"
-        android:text="Choose Doctor"
-        android:paddingHorizontal="60dp"
-        android:textColor="#FDFDFD" />
+<!--    <Button-->
+<!--        android:id="@+id/btnChooseDoctor"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:backgroundTint="#F4511E"-->
+<!--        android:paddingVertical="25dp"-->
+<!--        android:text="Choose Doctor"-->
+<!--        android:visibility="invisible"-->
+<!--        android:paddingHorizontal="60dp"-->
+<!--        android:textColor="#FDFDFD" />-->
 </RelativeLayout>

@@ -14,6 +14,7 @@ class SymptomsAdapter(private val heartRelatedModels: ArrayList<SymptomsModel>) 
 
     override fun onBindViewHolder(holder: SymptomsViewHolder, position: Int) {
         val heartRelatedModel = heartRelatedModels[position]
+        ItemAnimation.animateFadeIn(holder.itemView, position)
         holder.setData(heartRelatedModel)
     }
 
