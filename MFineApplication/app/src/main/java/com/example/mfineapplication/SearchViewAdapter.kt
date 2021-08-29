@@ -24,7 +24,7 @@ class SearchViewAdapter(var context: Context, var userDataList: List<SymptomsMod
     override fun onBindViewHolder(holder: RecyclerviewHolder, position: Int) {
         holder.mTvSymptomName.setText(filteredUserDataList[position].tvSymptoms)
         Glide.with(holder.mIvImage).load(filteredUserDataList[position].ivUrl).into(holder.mIvImage)
-        ItemAnimation.animateLeftRight(holder.itemView, position)
+        ItemAnimation.animateFadeIn(holder.itemView, position)
         holder.itemView.setOnClickListener {
             val intent = Intent(context, SymptomDetailActivity::class.java)
             intent.putExtra("symptomsName", filteredUserDataList[position].tvSymptoms)
