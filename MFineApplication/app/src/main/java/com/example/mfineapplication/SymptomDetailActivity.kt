@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mfineapplication.Model.NotificationModel
 import kotlinx.android.synthetic.main.activity_symptom_detail.*
 import kotlinx.android.synthetic.main.doctor_itemlayout.*
 import java.util.ArrayList
@@ -41,5 +42,9 @@ class SymptomDetailActivity : AppCompatActivity(),OnClickListener {
             val intent = Intent(this, PatientRegistrationActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun readNotification(notificationModel: NotificationModel, position: Int) {
+
     }
 }
