@@ -90,6 +90,13 @@ class NotificationFragment : Fragment(R.layout.fragment_notification), OnClickLi
                 "wants to know health click heer to conversession"
             )
         )
+        doctorList.add(
+            NotificationModel(
+                "https://i.postimg.cc/0Q6kQWy5/3.jpg",
+                "Dr.Ganesh",
+                "wants to know health click heer to conversession"
+            )
+        )
     }
 
     private fun setNotificationRecyclerView() {
