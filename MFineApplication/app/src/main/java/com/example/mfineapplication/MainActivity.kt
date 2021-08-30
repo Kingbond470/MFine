@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
                     supportFragmentManager.beginTransaction().apply {
                         replace(R.id.frameLayout_for_Fragments, LabTestFragment())
+                            .addToBackStack("")
                             .commit()
                     }
                 }

@@ -5,14 +5,11 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.mfineapplication.*
 import com.example.mfineapplication.Adapter.CommonSymptomsAdapter
 import com.example.mfineapplication.Adapter.HospitalsAdapter
-import com.example.mfineapplication.ExploreMoreActivity
 import com.example.mfineapplication.Model.CommonSymptoms
 import com.example.mfineapplication.Model.Hospitals
-import com.example.mfineapplication.Supporter
-import com.example.mfineapplication.R
-import com.example.mfineapplication.WalletActivity
 import com.romainpiel.shimmer.Shimmer
 import kotlinx.android.synthetic.main.fragment_explore.*
 
@@ -37,6 +34,16 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
 
         btnExploreMore.setOnClickListener{
             val intent=Intent(context,ExploreMoreActivity::class.java)
+            startActivity(intent)
+        }
+
+        cvOnlineConsultations.setOnClickListener{
+            val intent=Intent(context,ConsultNow::class.java)
+            startActivity(intent)
+        }
+
+        tvSearchExplore.setOnClickListener {
+            val intent=Intent(context,ConsultNow::class.java)
             startActivity(intent)
         }
 
