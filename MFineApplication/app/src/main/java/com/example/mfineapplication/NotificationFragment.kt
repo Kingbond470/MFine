@@ -66,7 +66,7 @@ class NotificationFragment : Fragment(R.layout.fragment_notification), OnClickLi
             NotificationModel(
                 R.drawable.person_6,
                 "Dr.Riya",
-                "wants to know health click heer to conversession"
+                "wants to know health click here to conversession"
             )
         )
         doctorList.add(
