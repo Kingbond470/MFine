@@ -12,6 +12,7 @@
         <activity android:name=".HelpAndSupport" />
         <activity android:name=".OrderMedicineActivity" />
         <activity android:name=".EditProfile" />
+
         <activity
             android:name=".AppointmentConfirmationActivity"
             android:exported="true" />
@@ -22,16 +23,14 @@
             android:name=".SymptomDetailActivity"
             android:exported="true" />
         <activity
-            android:name=".ConsultNow"
-            android:exported="true" />
-        <activity
             android:name=".CreateAccount"
             android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+
         <activity
             android:name=".ExploreMoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConsultNow"
             android:exported="true" />
         <activity
             android:name=".SearchActivity"
@@ -50,6 +49,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
 
         <meta-data
