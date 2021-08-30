@@ -696,31 +696,18 @@
                         android:layout_margin="5dp"
                         android:layout_weight="1">
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/cdExploreMoreTest"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardCornerRadius="15dp">
-
-                            <ImageView
-                                android:id="@+id/ivExploreMoreTest"
-                                android:layout_width="120dp"
-                                android:layout_height="120dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/explore_20_more_tests" />
-
-                        </androidx.cardview.widget.CardView>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/cdExploreMoreTest"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center_horizontal"
-                            android:text="Explore 20+ Tests"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
+                        <Button
+                            android:id="@+id/btnExploreMoreSymptoms"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/orange_rectangle"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/self_checks_thyroid"
+                            android:text="See More"
+                            android:textAllCaps="false"
+                            android:textColor="@color/orange"
                             android:textSize="15sp" />
+
 
                     </RelativeLayout>
 

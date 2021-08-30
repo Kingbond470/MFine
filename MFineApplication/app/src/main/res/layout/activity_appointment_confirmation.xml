@@ -3,124 +3,154 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".AppointmentConfirmationActivity">
+
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifConfirmationImageView"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
         android:src="@drawable/confirmation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:textSize="30sp"
-        android:text="Thank You !"/>
+        android:fontFamily="@font/roboto"
+        android:padding="10dp"
+        android:text="Thank You !"
+        android:textSize="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        android:textSize="24sp"
-        android:text="You have successfully booked your seat...."/>
+        android:fontFamily="@font/roboto"
+        android:padding="10dp"
+        android:text="You have successfully booked your seat."
+        android:textSize="24sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="14sp"
+        android:fontFamily="@font/roboto"
+        android:text="Patient Details"
         android:textColor="@color/black"
-        android:text="Patient Details"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:elevation="10dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="12dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/very_light_blue"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginEnd="25dp"
-                android:padding="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:layout_height="wrap_content">
+                android:layout_marginEnd="25dp"
+                android:padding="10dp">
+
                 <TextView
                     android:layout_width="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Name :- "/>
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Name :- "
+                    android:textSize="18sp" />
+
                 <TextView
                     android:id="@+id/tvPatientName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="20sp"
-                    android:text="Nishant Rishab"/>
+                    android:fontFamily="@font/roboto"
+                    android:text="Nishant Rishab"
+                    android:textSize="20sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginEnd="25dp"
-                android:padding="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:layout_height="wrap_content">
+                android:layout_marginEnd="25dp"
+                android:padding="10dp">
+
                 <TextView
                     android:layout_width="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Phone No :- "/>
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Phone No :- "
+                    android:textSize="18sp" />
+
                 <TextView
                     android:id="@+id/tvPatientContactNo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="20sp"
-                    android:text="8855886495"/>
+                    android:fontFamily="@font/roboto"
+                    android:text="8855886495"
+                    android:textSize="20sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginEnd="25dp"
-                android:padding="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:layout_height="wrap_content">
+                android:layout_marginEnd="25dp"
+                android:padding="10dp">
+
                 <TextView
                     android:layout_width="wrap_content"
-                    android:textSize="18sp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Address :- "/>
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:text="Address :- "
+                    android:textSize="18sp" />
+
                 <TextView
                     android:id="@+id/tvPatientEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="20sp"
-                    android:text="Mumbai"/>
+                    android:fontFamily="@font/roboto"
+                    android:text="Mumbai"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
-   </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
     <Button
         android:id="@+id/btnOk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
+        android:layout_gravity="bottom"
         android:layout_marginHorizontal="20dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:background="@color/light_blue"
-        android:textSize="16sp"
-        android:padding="5dp"
         android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:text="Ok"/>
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/roboto"
+        android:padding="5dp"
+        android:text="Okay"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
 </LinearLayout>
