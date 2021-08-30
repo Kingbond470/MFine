@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:text="D' Souza Layout"
+                android:text="Mausam Layout"
                 android:textColor="#000000"
                 android:textSize="12dp"
                 android:textStyle="bold" />
@@ -145,7 +145,7 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/roboto"
                 android:padding="5dp"
-                android:text="Get the Order Delivered tomorrow before 9:00 pm if ou order now"
+                android:text="Get the Order Delivered tomorrow before 9:00 pm if you order now"
                 android:textColor="#037280"
                 android:textSize="15dp" />
 
