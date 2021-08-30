@@ -26,8 +26,7 @@ class FragmentExplore : Fragment(R.layout.fragment_explore) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        notification_btn.setOnClickListener {
+                notification_btn.setOnClickListener {
             val intent = Intent(context, Supporter::class.java)
             intent.putExtra("token", "notificationFragment")
             startActivity(intent)

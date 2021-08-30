@@ -14,9 +14,9 @@ class AppointmentConfirmationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment_confirmation)
 
-        tvPatientName.text = intent.getStringExtra("name_value")
-        tvPatientEmail.text = intent.getStringExtra("address_value")
-        tvPatientContactNo.text = intent.getStringExtra("mobileNo_value")
+        tvPatientName.text = intent.getStringExtra("name")
+        tvPatientEmail.text = intent.getStringExtra("address")
+        tvPatientContactNo.text = intent.getStringExtra("mobile")
         btnOk.setOnClickListener {
             Toast.makeText(this, "Your application received", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
