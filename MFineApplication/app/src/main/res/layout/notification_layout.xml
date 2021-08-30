@@ -17,7 +17,7 @@
             android:id="@+id/doctor_profileImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/user_icon"
+            android:src="@drawable/person_1"
             app:civ_border_color="#FFFFFF"
             app:civ_border_width="1dp" />
 
