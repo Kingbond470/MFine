@@ -30,69 +30,69 @@ class NotificationFragment : Fragment(R.layout.fragment_notification), OnClickLi
         doctorList = arrayListOf()
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/NjYj4kpb/1.png",
+                R.drawable.person_1,
                 "Dr.Twinkle",
                 "wants to know your fever condition, if you have any query then he will resolve"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/Jzq4dHF8/5.jpg",
+                R.drawable.person_5,
                 "Dr.Pallavi",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/5t2NcNcC/2.jpg", "Dr.Mausham",
+                R.drawable.person_2, "Dr.Mausham",
                 "wants to know your head pain"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/0Q6kQWy5/3.jpg",
+                R.drawable.person_3,
                 "Dr.Nishant",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/NjYj4kpb/1.png",
+                R.drawable.person_1,
                 "Dr.kumar",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/cJk1dyZ5/6.jpg",
+                R.drawable.person_6,
                 "Dr.Riya",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/1tL9NG8G/4.png",
+                R.drawable.person_4,
                 "Dr.Mishra",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/0Q6kQWy5/3.jpg",
+                R.drawable.person_3,
                 "Dr.Ganesh",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/5t2NcNcC/2.jpg",
+                R.drawable.person_2,
                 "Dr.Subhash",
                 "wants to know health click heer to conversession"
             )
         )
         doctorList.add(
             NotificationModel(
-                "https://i.postimg.cc/0Q6kQWy5/3.jpg",
+                R.drawable.person_4,
                 "Dr.Ganesh",
                 "wants to know health click heer to conversession"
             )

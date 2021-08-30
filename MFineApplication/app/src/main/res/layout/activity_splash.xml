@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         android:layout_centerInParent="true"
+        android:layout_margin="10dp"
         android:background="@color/transparent"
         android:src="@drawable/splash_logo" />
 
