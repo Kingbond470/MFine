@@ -124,5 +124,65 @@ Copy the link of this repositary. Paste the link in Url Box of Android Studio wi
     
     // gif 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    
+# Let's see
+
+Create Account 
+
+<table>
+  <tr>
+    <td>Register User</td>
+     <td>Login User</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Createa%20Account.gif" width="280" /></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/MenuDrawyer.gif" width="280"></td>
+  </tr>
+ </table>
+
+ 
+ 
+ Landing Page/Home
+ 
+ <table>
+  <tr>
+    <td>Register User</td>
+     <td>Login User</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HomePage.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Consult%20Now.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HealthFiles.gif" width="280"></td>
+  </tr>
+ </table>
+ 
+  Explore More
+ 
+ <table>
+  <tr>
+    <td>Register User</td>
+     <td>Login User</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/ExploreMore.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/OrderLabTest.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/OrderMedicine.gif" width="280"></td>
+  </tr>
+ </table>
+
+ User Features
+ 
+ <table>
+  <tr>
+    <td>Register User</td>
+     <td>Login User</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Edit Profie.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Notification.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HelpAndSupport.gif" width="280"></td>
+  </tr>
+ </table>
 
 # Lessons Learnt📚
+If you like the project then definitely give a star, it will motivate and help us to do better. Thank you.
