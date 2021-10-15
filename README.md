@@ -66,6 +66,68 @@ Congratulations, you have created your first local clone from your remote Github
 Open Android Studio. Go to File > New > Project From Version Control. 
 
 Copy the link of this repositary. Paste the link in Url Box of Android Studio window and click on "Clone" button.
+    
+# Let's see
+
+### Create Account 
+
+<table>
+  <tr>
+    <td>Login</td>
+     <td>Menu Drawyer</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Createa%20Account.gif" width="280" /></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/MenuDrawyer.gif" width="280"></td>
+  </tr>
+ </table>
+
+ 
+ 
+### Landing Page/Home
+ 
+ <table>
+  <tr>
+    <td>Home Page</td>
+     <td>Consult Now</td>
+      <td>Health Files</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HomePage.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Consult%20Now.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HealthFiles.gif" width="280"></td>
+  </tr>
+ </table>
+ 
+### Explore More
+ 
+ <table>
+  <tr>
+    <td>Explore More</td>
+     <td>Order Lab Test</td>
+      <td>Order Medicine</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/ExploreMore.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/OrderLabTest.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/OrderMedicine.gif" width="280"></td>
+  </tr>
+ </table>
+
+### User Features
+ 
+ <table>
+  <tr>
+    <td>Edit Profile</td>
+     <td>Notification</td>
+      <td> Help and Support</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Edit Profie.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Notification.gif" width="280"></td>
+    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HelpAndSupport.gif" width="280"></td>
+  </tr>
+ </table>
 
 # Dependencies 
     //General Dependencies
@@ -125,67 +187,5 @@ Copy the link of this repositary. Paste the link in Url Box of Android Studio wi
     // gif 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     
-# Let's see
-
-Create Account 
-
-<table>
-  <tr>
-    <td>Login</td>
-     <td>Menu Drawyer</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Createa%20Account.gif" width="280" /></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/MenuDrawyer.gif" width="280"></td>
-  </tr>
- </table>
-
- 
- 
- Landing Page/Home
- 
- <table>
-  <tr>
-    <td>Home Page</td>
-     <td>Consult Now</td>
-      <td>Health Files</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HomePage.gif" width="280"></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Consult%20Now.gif" width="280"></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HealthFiles.gif" width="280"></td>
-  </tr>
- </table>
- 
-  Explore More
- 
- <table>
-  <tr>
-    <td>Explore More</td>
-     <td>Order Lab Test</td>
-      <td>Order Medicine</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/ExploreMore.gif" width="280"></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/OrderLabTest.gif" width="280"></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/OrderMedicine.gif" width="280"></td>
-  </tr>
- </table>
-
- User Features
- 
- <table>
-  <tr>
-    <td>Edit Profile</td>
-     <td>Notification</td>
-      <td> Help and Support</td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Edit Profie.gif" width="280"></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Notification.gif" width="280"></td>
-    <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HelpAndSupport.gif" width="280"></td>
-  </tr>
- </table>
-
 # Lessons Learnt📚
 If you like the project then definitely give a star, it will motivate and help us to do better. Thank you.
