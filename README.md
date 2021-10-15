@@ -131,8 +131,8 @@ Create Account
 
 <table>
   <tr>
-    <td>Register User</td>
-     <td>Login User</td>
+    <td>Login</td>
+     <td>Menu Drawyer</td>
   </tr>
   <tr>
     <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Createa%20Account.gif" width="280" /></td>
@@ -146,8 +146,9 @@ Create Account
  
  <table>
   <tr>
-    <td>Register User</td>
-     <td>Login User</td>
+    <td>Home Page</td>
+     <td>Consult Now</td>
+      <td>Health Files</td>
   </tr>
   <tr>
     <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/HomePage.gif" width="280"></td>
@@ -160,8 +161,9 @@ Create Account
  
  <table>
   <tr>
-    <td>Register User</td>
-     <td>Login User</td>
+    <td>Explore More</td>
+     <td>Order Lab Test</td>
+      <td>Order Medicine</td>
   </tr>
   <tr>
     <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/ExploreMore.gif" width="280"></td>
@@ -174,8 +176,9 @@ Create Account
  
  <table>
   <tr>
-    <td>Register User</td>
-     <td>Login User</td>
+    <td>Edit Profile</td>
+     <td>Notification</td>
+      <td> Help and Support</td>
   </tr>
   <tr>
     <td><img src="https://github.com/Kingbond470/MFine/blob/main/ReadmeFile/Edit Profie.gif" width="280"></td>
