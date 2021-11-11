@@ -79,21 +79,3 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
-
-    <!--<com.google.android.material.tabs.TabLayout-->
-    <!--android:id="@+id/wallet_tab"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_margin="10dp"-->
-    <!--android:background="@drawable/custom_bg2"-->
-    <!--android:gravity="center"-->
-    <!--android:paddingHorizontal="50dp"-->
-    <!--app:tabMode="auto"-->
-    <!--app:tabRippleColor="#00ACC1"-->
-    <!--app:tabSelectedTextColor="#FFFFFF"-->
-    <!--app:tabTextColor="#FFFFFF" />-->
-
-    <!--<androidx.viewpager.widget.ViewPager-->
-    <!--android:id="@+id/wallet_viewpager"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content" />-->
