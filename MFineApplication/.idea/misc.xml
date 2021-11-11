@@ -3,6 +3,43 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/back_arrow.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/blood_group_not_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/blood_group_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/blood_group_selector.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/blood_group_text_color.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/card_left_bg3.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/coupon_tab_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/custom_bg2.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/edit_bg.xml" value="0.21574074074074073" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/edit_profile_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/edit_profile_et_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/gender_text_color.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/ic_edit.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/ic_explore.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/rb_not_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/rb_selected.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/drawable/rb_selector.xml" value="0.2203125" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_appointment_confirmation.xml" value="0.1" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_consult_now.xml" value="0.1" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_create_account.xml" value="0.18" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_explore_more.xml" value="0.1" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_help_and_support.xml" value="0.1" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_order_medicine.xml" value="0.1" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_supporter.xml" value="0.19722222222222222" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/activity_wallet.xml" value="0.19722222222222222" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/doctor_itemlayout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/explore_more_category_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/fragment_coin.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/fragment_consult_now_side_nav.xml" value="0.1" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/fragment_coupon.xml" value="0.19722222222222222" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/fragment_explore.xml" value="0.2" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/layout/header.xml" value="0.20102564102564102" />
+        <entry key="..\:/Android/MFine/MFineApplication/app/src/main/res/menu/sidenav_menu.xml" value="0.33" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/custom_bg1.xml" value="0.290625" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/custom_bg2.xml" value="0.290625" />
         <entry key="..\:/Users/imrep/Desktop/MFine/MFineApplication/app/src/main/res/drawable/edit_background.xml" value="0.290625" />
@@ -44,5 +81,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.25833333333333336" />
+      </ProjectState>
+    </option>
   </component>
 </project>

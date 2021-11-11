@@ -6,10 +6,13 @@
     android:background="@drawable/splash_bg"
     tools:context=".SplashActivity">
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
         android:layout_centerInParent="true"
-        android:src="@drawable/m_fine_logo_2" />
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        android:src="@drawable/splash_logo" />
 
 </RelativeLayout>
